@@ -7,9 +7,9 @@ releases:
     namespace: default
     chart: bitnami/postgresql
     values:
-      - auth:
-          username: my-user
-          password: my-password
+      - values-postgresql.yaml
   - name: my-nginx
     namespace: default
     chart: bitnami/nginx
+    values:
+      - values-nginx.yaml
